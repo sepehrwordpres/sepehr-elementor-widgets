@@ -1,0 +1,219 @@
+/**
+ * SEW Dynamic Post Grid Pro
+ * Premium glassmorphism styling.
+ * Handle: sew-dynamic-post-grid-pro
+ */
+
+.sew-dpg-wrapper {
+	--sew-dpg-radius: 20px;
+	position: relative;
+	width: 100%;
+}
+
+/* ---------- Filters ---------- */
+.sew-dpg-filters {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 10px;
+	margin-bottom: 28px;
+}
+
+.sew-dpg-filter-btn {
+	appearance: none;
+	cursor: pointer;
+	background: rgba(255, 255, 255, 0.08);
+	color: #fff;
+	border: 1px solid rgba(255, 255, 255, 0.2);
+	border-radius: 30px;
+	padding: 8px 20px;
+	font-size: 14px;
+	line-height: 1.4;
+	backdrop-filter: blur(8px);
+	-webkit-backdrop-filter: blur(8px);
+	transition: background-color 0.25s ease, color 0.25s ease, border-color 0.25s ease, transform 0.2s ease;
+}
+
+.sew-dpg-filter-btn:hover {
+	transform: translateY(-1px);
+}
+
+.sew-dpg-filter-btn.is-active {
+	background: #6366f1;
+	color: #fff;
+	border-color: #6366f1;
+}
+
+/* ---------- Grid ---------- */
+.sew-dpg-grid {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 24px;
+	transition: opacity 0.25s ease;
+}
+
+.sew-dpg-grid.is-loading {
+	opacity: 0.45;
+	pointer-events: none;
+}
+
+.sew-dpg-no-posts {
+	grid-column: 1 / -1;
+	text-align: center;
+	opacity: 0.7;
+}
+
+/* ---------- Card: premium glassmorphism ---------- */
+.sew-dpg-card {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	overflow: hidden;
+	border-radius: var(--sew-dpg-radius);
+	background: rgba(255, 255, 255, 0.12);
+	border: 1px solid rgba(255, 255, 255, 0.25);
+	backdrop-filter: blur(16px);
+	-webkit-backdrop-filter: blur(16px);
+	box-shadow: 0 20px 40px rgba(0, 0, 0, 0.25);
+	transition: transform 0.35s cubic-bezier(0.2, 0.8, 0.2, 1), box-shadow 0.35s ease, border-color 0.35s ease;
+}
+
+.sew-dpg-card::before {
+	/* soft border highlight / sheen */
+	content: '';
+	position: absolute;
+	inset: 0;
+	border-radius: inherit;
+	padding: 1px;
+	background: linear-gradient(135deg, rgba(255, 255, 255, 0.45), rgba(255, 255, 255, 0) 40%);
+	-webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
+	-webkit-mask-composite: xor;
+	mask-composite: exclude;
+	pointer-events: none;
+}
+
+.sew-dpg-card:hover {
+	transform: translateY(-6px);
+	box-shadow: 0 30px 60px rgba(0, 0, 0, 0.35);
+	border-color: rgba(255, 255, 255, 0.4);
+}
+
+.sew-dpg-card-image {
+	position: relative;
+	width: 100%;
+	height: 220px;
+	overflow: hidden;
+}
+
+.sew-dpg-card-image img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	display: block;
+	transition: transform 0.5s ease;
+}
+
+.sew-dpg-card:hover .sew-dpg-card-image img {
+	transform: scale(1.06);
+}
+
+.sew-dpg-card-body {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+	padding: 24px;
+}
+
+.sew-dpg-card-date {
+	font-size: 12px;
+	letter-spacing: 0.04em;
+	text-transform: uppercase;
+	color: rgba(255, 255, 255, 0.6);
+}
+
+.sew-dpg-card-title {
+	margin: 0;
+	font-size: 20px;
+	font-weight: 600;
+	line-height: 1.35;
+}
+
+.sew-dpg-card-title a {
+	color: #fff;
+	text-decoration: none;
+}
+
+.sew-dpg-card-title a:hover {
+	text-decoration: underline;
+}
+
+.sew-dpg-card-excerpt {
+	color: rgba(255, 255, 255, 0.8);
+	font-size: 14px;
+	line-height: 1.7;
+	margin: 0;
+}
+
+/* ---------- Buttons ---------- */
+.sew-dpg-btn {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	gap: 8px;
+	align-self: flex-start;
+	margin-top: 6px;
+	cursor: pointer;
+	text-decoration: none;
+	border: none;
+	border-radius: 10px;
+	padding: 12px 28px;
+	font-size: 14px;
+	font-weight: 600;
+	background: #6366f1;
+	color: #fff;
+	transition: background-color 0.25s ease, transform 0.2s ease, box-shadow 0.25s ease;
+}
+
+.sew-dpg-btn:hover {
+	background: #4f46e5;
+	color: #fff;
+	transform: translateY(-2px);
+	box-shadow: 0 10px 24px rgba(99, 102, 241, 0.35);
+}
+
+.sew-dpg-btn:disabled {
+	opacity: 0.6;
+	cursor: not-allowed;
+	transform: none;
+	box-shadow: none;
+}
+
+/* ---------- Load more ---------- */
+.sew-dpg-load-more-wrap {
+	display: flex;
+	justify-content: center;
+	margin-top: 32px;
+}
+
+.sew-dpg-load-more-end {
+	text-align: center;
+	margin-top: 24px;
+	opacity: 0.6;
+	font-size: 13px;
+}
+
+/* ---------- Responsive ---------- */
+@media (max-width: 1024px) {
+	.sew-dpg-grid {
+		grid-template-columns: repeat(2, 1fr);
+	}
+}
+
+@media (max-width: 767px) {
+	.sew-dpg-grid {
+		grid-template-columns: 1fr;
+	}
+
+	.sew-dpg-card-image {
+		height: 200px;
+	}
+}

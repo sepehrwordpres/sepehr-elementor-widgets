@@ -1,0 +1,157 @@
+/* Container Reset & Direction */
+.sew-testimonial-carousel-wrapper {
+    position: relative;
+    width: 100%;
+    direction: rtl;
+    padding: 20px 10px 50px 10px;
+    box-sizing: border-box;
+}
+
+.sew-testimonial-carousel-container {
+    width: 100%;
+    overflow: hidden;
+    padding: 15px 0;
+}
+
+.sew-testimonial-carousel-container .swiper-wrapper {
+    display: flex !important;
+    flex-direction: row !important;
+    align-items: stretch;
+}
+
+.sew-testimonial-carousel-container .swiper-slide {
+    height: auto !important;
+    display: flex;
+}
+
+/* Glassmorphism Card Core Defaults */
+.sew-glass-card {
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(20px) saturate(180%);
+    -webkit-backdrop-filter: blur(20px) saturate(180%);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    border-radius: 24px;
+    padding: 30px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+    box-sizing: border-box;
+}
+
+.sew-glass-card:hover {
+    transform: translateY(-8px) scale(1.01);
+}
+
+/* Rating Stars */
+.sew-testimonial-rating {
+    display: flex;
+    gap: 6px;
+    font-size: 20px;
+    margin-bottom: 16px;
+}
+
+.sew-star-filled {
+    color: #fbbf24;
+    text-shadow: 0 0 10px rgba(251, 191, 36, 0.5);
+}
+
+.sew-star-empty {
+    color: rgba(255, 255, 255, 0.2);
+}
+
+/* Content Text */
+.sew-testimonial-text {
+    font-size: 15px;
+    line-height: 1.8;
+    color: rgba(255, 255, 255, 0.9);
+    font-weight: 300;
+    margin-bottom: 24px;
+    flex-grow: 1;
+}
+
+/* Author Section */
+.sew-testimonial-author {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
+    padding-top: 18px;
+}
+
+.sew-testimonial-avatar img {
+    width: 52px;
+    height: 52px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid rgba(255, 255, 255, 0.25);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.sew-testimonial-info {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.sew-testimonial-name {
+    font-size: 16px;
+    font-weight: 700;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.sew-testimonial-role {
+    font-size: 13px;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+/* Glass Navigation Buttons Defaults */
+.sew-swiper-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    z-index: 20;
+    transition: all 0.3s ease;
+}
+
+.sew-swiper-button:hover {
+    background-color: rgba(255, 255, 255, 0.25);
+    border-color: rgba(255, 255, 255, 0.4);
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
+}
+
+.sew-swiper-button-prev {
+    right: -15px;
+}
+
+.sew-swiper-button-next {
+    left: -15px;
+}
+
+/* Pagination Dots Defaults */
+.sew-testimonial-carousel-wrapper .swiper-pagination-bullet {
+    background: rgba(255, 255, 255, 0.25);
+    opacity: 1;
+}
+
+.sew-testimonial-carousel-wrapper .swiper-pagination-bullet-active {
+    background: #ffffff;
+    width: 24px;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+}
