@@ -80,7 +80,7 @@
 * رفتار Responsive
 * CSS و JavaScript اختصاصی
 
-![Testimonial Carousel](screenshots/testimonial-carousel.png)
+![Testimonial Carousel](screenshots/testimonial-carousel-pro.png)
 
 ---
 
