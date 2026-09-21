@@ -17,29 +17,29 @@ architecture.
 
 ### Dynamic Post Grid Pro
 
--   AJAX category filter
--   AJAX load more
--   Advanced post query controls
+- AJAX category filter
+- AJAX load more
+- Advanced post query controls
 
-Screenshot: `screenshots/dynamic-post-grid-pro.png`
+![Dynamic Post Grid Pro](screenshots/dynamic-post-grid-pro.png)
 
 ### Pricing Table Pro
 
 Professional pricing table widget.
 
-Screenshot: `/screenshots/pricing-table-pro.png`
+![Pricing Table Pro](screenshots/pricing-table-pro.png)
 
 ### Testimonial Carousel
 
 Responsive testimonial slider.
 
-Screenshot: `/screenshots/testimonial-carousel.png`
+![Testimonial Carousel](screenshots/testimonial-carousel.png)
 
 ### Image Card
 
 Modern image card widget.
 
-Screenshot: `/screenshots/image-card.png`
+![Image Card](screenshots/image-card.png)
 
 ## Installation
 
