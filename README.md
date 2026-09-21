@@ -21,7 +21,7 @@ architecture.
 -   AJAX load more
 -   Advanced post query controls
 
-Screenshot: `/screenshots/dynamic-post-grid-pro.png`
+Screenshot: `screenshots/dynamic-post-grid-pro.png`
 
 ### Pricing Table Pro
 
