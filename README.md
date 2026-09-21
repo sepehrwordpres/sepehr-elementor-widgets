@@ -336,10 +336,6 @@ WordPress & PHP Developer focused on:
 * REST API
 * SEO
 
----
 
-## License
 
-This project is licensed under the MIT License.
 
-See the [LICENSE](LICENSE) file for details.
