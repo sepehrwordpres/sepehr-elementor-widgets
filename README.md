@@ -80,7 +80,7 @@ A responsive testimonial carousel for displaying customer feedback and reviews.
 * Responsive behavior
 * Dedicated CSS and JavaScript assets
 
-![Testimonial Carousel](screenshots/testimonial-carousel.png)
+![Testimonial Carousel](screenshots/testimonial-carousel-pro.png)
 
 ---
 
