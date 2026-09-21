@@ -33,7 +33,7 @@ Professional pricing table widget.
 
 Responsive testimonial slider.
 
-![Testimonial Carousel](screenshots/testimonial-carousel.png)
+![Testimonial Carousel](screenshots/testimonial-carousel-pro.png)
 
 ### Image Card
 
