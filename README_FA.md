@@ -335,10 +335,4 @@ WordPress & PHP Developer
 * REST API
 * SEO
 
----
 
-## مجوز
-
-این پروژه تحت مجوز **MIT License** منتشر شده است.
-
-برای اطلاعات بیشتر فایل [LICENSE](LICENSE) را مشاهده کنید.
